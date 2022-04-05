@@ -1,0 +1,19 @@
+#!/bin/bash
+#SBATCH -N 1
+#SBATCH -p RM-512
+#SBATCH -n 8
+#SBATCH --mem=500000
+#SBATCH -t 5:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=maihfly
+
+set -x
+
+cd /
+cd /jet/home/maihfly/MAIHfly_Projects/aBiCyDNH-Cyclo/Cyclodextrins-Broken
+module load orca
+module load openmpi/4.1.1-gcc8.3.1 
+module load anaconda3
+conda activate Cyclodextrins-Env
+python OthersFile.py
+
