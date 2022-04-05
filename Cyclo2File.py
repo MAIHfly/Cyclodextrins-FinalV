@@ -8,7 +8,7 @@ ade.Config.n_cores = Cores
 orca = ade.methods.ORCA()
 xtb = ade.methods.XTB()
 
-MoI2 = ade.Molecule('bI45Me2CyDNH2_New.xyz', solvent_name='DCM', charge=1)
+MoI2 = ade.Molecule('bICyDNH2_New.xyz', solvent_name='DCM', charge=1)
 
 print(MoI2, flush=True)
 
