@@ -1,5 +1,5 @@
 ! XTB2 Opt # invoke GFN2-XTB for Geometry Optimization
-! CPCM(Acetonitrile) # initiat solvent
+! CPCM(Acetonitrile) # initiate solvent
 * xyzfile 0 1 aBiCyDNH_New.xyz
 %pal
 nprocs  32
