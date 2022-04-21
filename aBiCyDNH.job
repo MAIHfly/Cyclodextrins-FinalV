@@ -12,10 +12,20 @@ set -x
 cd /
 cd /jet/home/maihfly/MAIHfly_Projects/Cyclodextrins-F2/acetonitrile/Cyclodextrins-FinalV
 
+echo ___IMPORTANT MESSAG___
+echo Navigated to Directory
+echo ___IMPORTANT MESSAGE___
+date
+
 module load orca
 module load openmpi/4.1.1-gcc8.3.1 
 module load anaconda3
 conda activate Cyclodextrins-Env
+
+echo ___IMPORTANT MESSAG___
+echo Modules Loaded
+echo ___IMPORTANT MESSAGE___
+date
 
 ulimit -s unlimited
 export OMP_STACKSIZE = 6G
@@ -23,10 +33,24 @@ export OMP_NUM_THREADS = 64
 export OMP_MAX_ACTIVE_LEVELS = 1
 setenv OMP_SCHEDULE "dynamic"
 
+echo ___IMPORTANT MESSAG___
+echo Parallel Processing Enabled XTB
+echo ___IMPORTANT MESSAGE___
+date
+
 xtb --input aBiCyDNH_ring_Xtb_Opt_fixing.inp coord aBiCyDNH_New.xyz --opt tight --alpb acetonitrile --parallel 72
 mv xtbopt.xyz aBiCyDNH_ring_xtb_opt.xyz
+
+echo ___IMPORTANT MESSAG___
+echo Ring Portion Optimized XTB
+echo ___IMPORTANT MESSAGE___
+date
 
 xtb --input aBiCyDNH_OMe_Xtb_fixing.inp coord aBiCyDNH_ring_xtb_opt.xyz --opt tight --alpb acetonitrile --parallel 72
 mv xtbopt.xyz aBiCyDNH_full_xtb_opt.xyz
 
+echo ___IMPORTANT MESSAG___
+echo OMe Portion Optimized XTB
+echo ___IMPORTANT MESSAGE___
+date
 

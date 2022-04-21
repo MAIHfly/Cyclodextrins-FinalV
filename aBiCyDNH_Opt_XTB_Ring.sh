@@ -1,8 +1,8 @@
-! GFN2 Opt # invoke GFN2-XTB for Geometry Optimization
+! BP86 def2-SVP def2/J RIJCOSX D4 Opt
 ! CPCM(Acetonitrile) # initiate solvent
 * xyzfile 0 1 aBiCyDNH_New.xyz
 %pal
-nprocs  32
+nprocs  72
 end
 
 %geom # initialize Geometric constraints for only optimizing the ring outside of the OMe groups
