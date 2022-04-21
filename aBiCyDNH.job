@@ -1,0 +1,29 @@
+#!/bin/bash
+#SBATCH -N 1
+#SBATCH -p RM-512
+#SBATCH -n 36
+#SBATCH --mem=500000
+#SBATCH -t 24:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=maihfly
+
+set -x
+
+cd /
+cd /jet/home/maihfly/MAIHfly_Projects/Cyclodextrins-F2/acetonitrile/Cyclodextrins-FinalV
+
+module load orca
+module load openmpi/4.1.1-gcc8.3.1 
+module load anaconda3
+conda activate Cyclodextrins-Env
+
+ulimit -s unlimited
+export OMP_STACKSIZE = 6G
+export OMP_NUM_THREADS = 64
+export OMP_MAX_ACTIVE_LEVELS = 1
+setenv OMP_SCHEDULE "dynamic"
+
+xtb --input aBiCyDNH_ring_Xtb_Opt_fixing.inp coord aBiCyDNH_New.xyz --opt tight --alpb acetonitrile
+mv xtbopt.xyz aBiCyDNH_ring_xtb_opt.xyz
+
+
