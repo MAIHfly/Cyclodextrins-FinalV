@@ -23,7 +23,10 @@ export OMP_NUM_THREADS = 64
 export OMP_MAX_ACTIVE_LEVELS = 1
 setenv OMP_SCHEDULE "dynamic"
 
-xtb --input aBiCyDNH_ring_Xtb_Opt_fixing.inp coord aBiCyDNH_New.xyz --opt tight --alpb acetonitrile
+xtb --input aBiCyDNH_ring_Xtb_Opt_fixing.inp coord aBiCyDNH_New.xyz --opt tight --alpb acetonitrile --parallel 72
 mv xtbopt.xyz aBiCyDNH_ring_xtb_opt.xyz
+
+xtb --input aBiCyDNH_OMe_Xtb_fixing.inp coord aBiCyDNH_ring_xtb_opt.xyz --opt tight --alpb acetonitrile --parallel 72
+mv xtbopt.xyz aBiCyDNH_full_xtb_opt.xyz
 
 
