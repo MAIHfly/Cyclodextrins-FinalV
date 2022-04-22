@@ -2,7 +2,7 @@
 ! CPCM(Acetonitrile) # initiate solvent
 * xyzfile 0 1 aBiCyDNH_ring_orca_opt.xyz
 %pal
-nprocs  72
+nprocs  36
 end
 
 %geom # initialize Geometric constraints for only optimizing the ring outside of the OMe groups
