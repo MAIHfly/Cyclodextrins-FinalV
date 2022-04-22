@@ -1,0 +1,115 @@
+! BP86 def2-SVP def2/J RIJCOSX D4 Opt
+! CPCM(Acetonitrile) # initiate solvent
+* xyzfile 0 1 aBiCyDNH_New.xyz
+%pal
+nprocs  72
+end
+
+%geom # initialize Geometric constraints for only optimizing the ring outside of the OMe groups
+Constraints
+{C0 C}
+{C 1 C}
+{C 2 C}
+{C 3 C}
+{C 4 C}
+{C 5 C}
+{C 8 C}
+{C 9 C}
+{C 10 C}
+{C 11 C}
+{C 12 C}
+{C 13 C}
+{C 14 C}
+{C 15 C}
+{C 16 C}
+{C 17 C}
+{C 18 C}
+{C 19 C}
+{C 20 C}
+{C 23 C}
+{C 26 C}
+{C 27 C}
+{C 28 C}
+{C 29 C}
+{C 30 C}
+{C 31 C}
+{C 32 C}
+{C 33 C}
+{C 34 C}
+{C 35 C}
+{C 36 C}
+{C 37 C}
+{C 38 C}
+{C 41 C}
+{C 42 C}
+{C 44 C}
+{C 45 C}
+{C 46 C}
+{C 47 C}
+{C 48 C}
+{C 49 C}
+{C 50 C}
+{C 51 C}
+{C 52 C}
+{C 53 C}
+{C 54 C}
+{C 55 C}
+{C 56 C}
+{C 59 C}
+{C 60 C}
+{C 61 C}
+{C 62 C}
+{C 63 C}
+{C 64 C}
+{C 65 C}
+{C 66 C}
+{C 67 C}
+{C 68 C}
+{C 69 C}
+{C 70 C}
+{C 71 C}
+{C 74 C}
+{C 75 C}
+{C 77 C}
+{C 78 C}
+{C 79 C}
+{C 80 C}
+{C 81 C}
+{C 82 C}
+{C 83 C}
+{C 84 C}
+{C 85 C}
+{C 86 C}
+{C 87 C}
+{C 88 C}
+{C 89 C}
+{C 92 C}
+{C 93 C}
+{C 95 C}
+{C 96 C}
+{C 97 C}
+{C 98 C}
+{C 99 C}
+{C 100 C}
+{C 101 C}
+{C 102 C}
+{C 103 C}
+{C 104 C}
+{C 105 C}
+{C 106 C}
+{C 107 C}
+{C 108 C}
+{C 109 C}
+{C 110 C}
+{C 111 C}
+{C 112 C}
+{C 113 C}
+{C 114 C}
+{C 115 C}
+{C 116 C}
+{C 117 C}
+{C 118 C}
+[C 119 C}
+[C 120 C}
+end
+end
