@@ -75,7 +75,7 @@ echo OMe Portion Optimized with Orca
 echo ___IMPORTANT MESSAGE___
 date
 
-mv aBiCyDNH_OMe_Orca_Opt_fixing.xyz aBiCyDNH_fill_orca_opt.xyz
+mv aBiCyDNH_OMe_Orca_Opt_fixing.xyz aBiCyDNH_full_orca_opt.xyz
 
 echo ___IMPORTANT MESSAGE___
 echo Full Optimized File Optimized Renamed
