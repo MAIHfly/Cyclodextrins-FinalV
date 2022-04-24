@@ -61,6 +61,13 @@ echo Ring Portion Optimized with Orca
 echo ___IMPORTANT MESSAGE___
 date
 
+mv aBiCyDNH_Ring_Orca_Opt_fixing.xyz aBiCyDNH_ring_orca_opt.xyz
+
+echo ___IMPORTANT MESSAGE___
+echo Ring Optimized File Optimized Renamed
+echo ___IMPORTANT MESSAGE___
+date
+
 /opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411/orca aBiCyDNH_OMe_Orca_Opt_fixing.inp > aBiCyDNH_full_orca_opt.out
 
 echo ___IMPORTANT MESSAGE___
@@ -68,4 +75,15 @@ echo OMe Portion Optimized with Orca
 echo ___IMPORTANT MESSAGE___
 date
 
+mv aBiCyDNH_OMe_Orca_Opt_fixing.xyz aBiCyDNH_fill_orca_opt.xyz
+
+echo ___IMPORTANT MESSAGE___
+echo Full Optimized File Optimized Renamed
+echo ___IMPORTANT MESSAGE___
+date
+
 python aBiCyDNH_GibbsE_Calc.py
+
+echo ___IMPORTANT MESSAGE___
+echo Python File Renamed
+echo ___IMPORTANT MESSAGE___
