@@ -7,6 +7,7 @@ end
 
 %geom # initialize Geometric constraints for only optimizing the ring outside of the OMe groups
 Constraints
+{C O C}
 {C 1 C}
 {C 2 C}
 {C 3 C}
@@ -108,7 +109,7 @@ Constraints
 {C 116 C}
 {C 117 C}
 {C 118 C}
-[C 119 C}
-[C 120 C}
+{C 119 C}
+{C 120 C}
 end
 end
